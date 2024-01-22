@@ -1,4 +1,11 @@
-;Obj_OgreMCP:PasteButton[OgreConsoleCommand,EnterHouse,-RunScriptOB_AP,auto,EnterHouse,"OWNER_NAME"]
+;================================================================================
+; Title: Enter House | Author: The Marty Party | Date: 22 Jan 2024 | Version: 2.0
+;================================================================================
+
+/*
+    Visits a players house: 
+    Obj_OgreMCP:PasteButton[OgreConsoleCommand,EnterHouse,-RunScriptOB_AP,auto,EnterHouse,\"HouseOwnerName\"]
+*/
 
 function main(string housingQuery)
 {    
@@ -6,11 +13,11 @@ function main(string housingQuery)
     wait 30
     EQ2UIPage[PlayerHousing,OmniHouse].Child[Page,OmniHouse].Child[3].Child[3]:LeftClick
     wait 30
-    EQ2UIPage[PlayerHousing,OmniHouse].Child[Page,OmniHouse].Child[4].Child[5].Child[7]:SetProperty[Text, "${housingQuery}"]
+    EQ2UIPage[PlayerHousing,OmniHouse].Child[Page,OmniHouse].Child[4].Child[4].Child[7]:SetProperty[LocalText, "${housingQuery}"]
     wait 30
-    EQ2UIPage[PlayerHousing,OmniHouse].Child[Page,OmniHouse].Child[4].Child[5].Child[3]:LeftClick
+    EQ2UIPage[PlayerHousing,OmniHouse].Child[Page,OmniHouse].Child[4].Child[4].Child[3]:LeftClick
     wait 30
-    EQ2UIPage[PlayerHousing,OmniHouse].Child[Page,OmniHouse].Child[4].Child[5].Child[8]:LeftClick
+    EQ2UIPage[PlayerHousing,OmniHouse].Child[Page,OmniHouse].Child[4].Child[4].Child[8]:LeftClick
     wait 30
     EQ2UIPage[PlayerHousing,OmniHouse].Child[Page,OmniHouse].Child[4].Child[1].Child[10]:LeftClick
 }
