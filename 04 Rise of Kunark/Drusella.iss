@@ -1,9 +1,9 @@
 ;================================================================================
-; Title: Drusella | Author: The Marty Party | Date: 18 Jan 2024 | Version: 2.0
+; Title: Drusella | Author: The Marty Party | Date: 18 Jan 2024 | Version: 2.1
 ;================================================================================
 
 /*
-    This script is intended to be ran as a runscript via the chat event tab. Requires Draconic language.
+    This script is intended to be ran as a runscript via the chat event tab. Requires Sathirian language.
 
     > Add this command to your IC to enable chat events.
         oc !ci -ChangeOgreBotUIOption igw:${Me.Name} checkbox_settings_enable_chatevents TRUE TRUE TRUE
