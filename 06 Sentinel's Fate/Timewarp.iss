@@ -14,7 +14,6 @@ function main()
 				OgreBotAtom aExecuteAtom ${Me.Name} a_QueueCommand ChangeCastStackListBoxItem "Peace of Mind" FALSE TRUE
 				wait 20
 			}
-
 			else
 			{
 				wait 5
