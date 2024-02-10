@@ -13,7 +13,7 @@
 
 function main()
 {
-    echo ${Time}: Venril Script Started...
+    echo ${Time}: \agVenril Script Started...
     while ${Me.InCombat}
         {
         if ${OgreBotAPI.DetrimentalInfo[487, 314, ${Me.ID}, "exists"]}
@@ -88,5 +88,5 @@ function main()
 
 function atexit()
 {
-	echo ${Time}: Venril Script Ended...
+	echo ${Time}: \arVenril Script Ended...
 }
