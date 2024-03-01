@@ -1,5 +1,5 @@
 ;================================================================================
-; Title: Drusella | Author: The Marty Party | Date: 18 Jan 2024 | Version: 2.1
+; Title: Drusella | Author: The Marty Party | Date: 18 Jan 2024 | Version: 2.2
 ;================================================================================
 
 /*
@@ -16,7 +16,6 @@
         OgreBotAPI:ChatEvent_RemoveEntry["igw:${Me.Name}", "begins to shield herself in a necromantic aura."]
 */
 
-;// Need this include, it handles a lot of the variable creation.
 #include "${LavishScript.HomeDirectory}/Scripts/EQ2OgreBot/InstanceController/Ogre_Instance_Include.iss"
 
 function main()
@@ -25,7 +24,8 @@ function main()
     ;Cancel Spells
     oc !c -CancelMaintainedForWho All "Band of Thugs" "Blighted Horde" "Awaken Grave"
     oc !c -CancelMaintainedForWho All "Ball Lightning" "Ring of Fire" "Undead Horde"
-    oc !c -CancelMaintainedForWho All "Puppetmaster" "Dark Infestation"
+    oc !c -CancelMaintainedForWho All "Puppetmaster" "Dark Infestation" "Vampirism"
+    oc !c -CancelMaintainedForWho All "Unswerving Hammer" "Dark Broodlings"
     ;Cancel Items
     oc !c -CancelMaintainedForWho All "Aquatic Aggression" "Clockwork Cow Catapult" "Tinkered Turkey Launcher"
     oc !c -CancelMaintainedForWho All "Summon Bone Devil" "Summon Self-Help Book" "Power of Knowledge"    
